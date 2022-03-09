@@ -7,7 +7,7 @@
 
         public void Swap(int x, int y)
         {
-            var temp = x;
+            var temp =x;
             x = y;
             y = temp;
         }
