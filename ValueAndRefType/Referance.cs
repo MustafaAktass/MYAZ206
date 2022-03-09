@@ -12,7 +12,7 @@ namespace ValueAndRefType
         public int y { get; set; }
         public void Swap(ref int x, ref int y)
         {
-            var temp =x;
+            var temp = x;
             x = y;
             y = temp;
         }

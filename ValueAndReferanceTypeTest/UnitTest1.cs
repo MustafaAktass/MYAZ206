@@ -30,7 +30,7 @@ namespace ValueAndReferanceTypeTest
         [Fact]
         public void CheckOutKeyword()
         {
-            int a = 100 ;
+            int a = 100;
             var refType=new Referance();
             refType.CheckOut(out a);
             Assert.Equal(25, a);
