@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 namespace DataStructures.Array
 {
     public class Array : IEnumerable, ICloneable
@@ -52,7 +51,6 @@ namespace DataStructures.Array
             {
                 InnerList[index] = deger;
             }
-
         }
         public object Clone()
         {
@@ -63,6 +61,17 @@ namespace DataStructures.Array
         {
             // return InnerList.GetEnumerator();
             return new CustomArrayEnumerator(InnerList);
+        }
+        public int IndexOf(Object value)
+        {
+            for (int i = 0; i < InnerList.Length; i++)
+            {
+                if (value.Equals(InnerList[i]))
+                {
+                    return i; 
+                }                
+            }
+            return -1;
         }
     }
 }
