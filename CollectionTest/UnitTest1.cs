@@ -11,8 +11,8 @@ namespace CollectionTest
 
         public UnitTest1()
         {
-            leftList = new List<int> { 1,2,3,4,4,5};
-            rightList=new List<int> { 4,5,6,6,7};
+            leftList = new List<int> { 1, 2, 3, 4, 4, 5 };
+            rightList = new List<int> { 4, 5, 6, 6, 7 };
         }
         [Fact]
         public void Test1()
@@ -29,20 +29,15 @@ namespace CollectionTest
         {
             var unionlist = leftList.Union(rightList).OrderBy(item => item).ToList();
             Assert.Equal(7, unionlist.ToList().Count);
-            Assert.Collection(unionlist, 
+            Assert.Collection(unionlist,
                 item => Assert.Equal(1, item),
-                item => Assert.Equal(2, item), 
+                item => Assert.Equal(2, item),
                 item => Assert.Equal(3, item),
                 item => Assert.Equal(4, item),
                 item => Assert.Equal(5, item),
                 item => Assert.Equal(6, item),
                 item => Assert.Equal(7, item));
         }
-        //public void RightList()
-        //{
-        //    var exceptRightList=leftList.Except(rightList).ToList();
-
-        //    Assert.IsType<List<int>>(exceptRightList);
-        //}
+        
     }
 }
