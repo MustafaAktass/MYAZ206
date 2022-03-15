@@ -59,8 +59,8 @@ namespace DataStructures.Array
 
         public IEnumerator GetEnumerator()
         {
-            // return InnerList.GetEnumerator();
-            return new CustomArrayEnumerator(InnerList);
+             return InnerList.GetEnumerator();
+            //return new CustomArrayEnumerator(InnerList);
         }
         public int IndexOf(Object value)
         {
