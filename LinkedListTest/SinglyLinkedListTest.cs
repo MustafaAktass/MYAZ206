@@ -115,10 +115,11 @@ namespace LinkedListTest
         }
         [Fact]
         public void RemoveLast_Test()
-        {
+        { 
             _list.RemoveLast();
             Assert.Collection(_list,
             item=>Assert.Equal(8, item));
+
         }
         [Theory]
         [InlineData(8)]
