@@ -11,7 +11,6 @@ AddFirst<char>('z', ref node1);
 AddLast<char>('x', node1); 
 Traverse<char>(node1);
 
-
 static void Traverse<T>(SinglyLinkedListNode<T> Head)
 {
     if(Head == null)
