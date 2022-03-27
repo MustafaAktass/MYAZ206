@@ -119,7 +119,6 @@ namespace LinkedListTest
             _list.RemoveLast();
             Assert.Collection(_list,
             item=>Assert.Equal(8, item));
-
         }
         [Theory]
         [InlineData(8)]
