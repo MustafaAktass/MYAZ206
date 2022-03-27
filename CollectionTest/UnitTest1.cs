@@ -37,7 +37,7 @@ namespace CollectionTest
                 item => Assert.Equal(5, item),
                 item => Assert.Equal(6, item),
                 item => Assert.Equal(7, item));
-        }
+        } 
         
     }
 }
