@@ -173,7 +173,6 @@ namespace LinkedList.SinglyLinkedList
         {
             return new SinglyLinkedListEnumerator<T>(Head);
         }
-
         IEnumerator IEnumerable.GetEnumerator()
         {
             return GetEnumerator();
