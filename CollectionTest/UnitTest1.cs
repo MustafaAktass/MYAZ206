@@ -15,7 +15,7 @@ namespace CollectionTest
             rightList = new List<int> { 4, 5, 6, 6, 7 };
         }
         [Fact]
-        public void Test1()
+        public void IntersectionTest()
         {
             var intersectionList = leftList.Intersect(rightList);
             Assert.Equal(2, intersectionList.ToList().Count);
